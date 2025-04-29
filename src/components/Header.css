@@ -1,0 +1,75 @@
+/* Header.css */
+.header {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.gradient-bar {
+  position: absolute;
+  height: 10px;
+  background: linear-gradient(
+    90deg,
+    turquoise,
+    lightblue
+  ); /* Gradient effect */
+  width: 80%; /* Increase width for longer bars */
+  top: 50%;
+  animation: pulse 2s infinite; /* Pulsing effect */
+}
+
+.gradient-bar.left {
+  left: -40%; /* Adjust position for left bar */
+}
+
+.gradient-bar.right {
+  right: -40%; /* Adjust position for right bar */
+}
+
+img {
+  width: 100px; /* Adjust logo size */
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Hover effect */
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    width: 40%; /* Start with the initial width */
+  }
+  50% {
+    width: 50%; /* Expand to a larger width */
+  }
+  100% {
+    width: 40%; /* Shrink back to the initial width */
+  }
+}
