@@ -1,0 +1,7 @@
+/* footer.css */
+.carousel-footer {
+    max-height: 250px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f8f9fa; /* optional */
+  }

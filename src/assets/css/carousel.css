@@ -1,0 +1,73 @@
+/* carousel.css */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.home-page .carousel-container {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.carousel-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Hide carousel on non-home pages */
+.second-page .carousel-container,
+.third-page .carousel-container,
+.fourth-page .carousel-container,
+.referral-page .carousel-container {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    position: relative;
+  }
+
+  .carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-item img.custom-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .nav-button {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: opacity 0.3s ease !important;
+  }
+
+  .carousel-wrapper:hover .nav-button {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  .nav-button.left {
+    left: 10px;
+  }
+
+  .nav-button.right {
+    right: 10px;
+  }
+
+  .nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}

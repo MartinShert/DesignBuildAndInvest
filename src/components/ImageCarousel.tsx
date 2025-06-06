@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles.css"; // Or "./styles.css" depending on your file path
+import "../assets/css/styles.css";
 
 const images = [
   "https://via.placeholder.com/400x250?text=Slide+1",

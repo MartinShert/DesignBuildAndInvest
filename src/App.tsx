@@ -6,9 +6,8 @@ import Layout from "./components/Layout";
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
-import ReferralForm from "./components/ReferralForm"; // ✅
-
-import "./styles.css";
+import ReferralForm from "./components/ReferralForm";
+import "./assets/css/global.css";
 
 const App: React.FC = () => {
   return (

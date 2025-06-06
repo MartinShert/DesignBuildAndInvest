@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles.css";
+import "../assets/css/styles.css";
+
 
 const ThirdPage: React.FC = () => {
   return (

@@ -1,0 +1,23 @@
+/* layout.css */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+  z-index: 2;
+}
+
+footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+footer p {
+  color: #666;
+}

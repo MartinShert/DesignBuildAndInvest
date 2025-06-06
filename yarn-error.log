@@ -1,0 +1,70 @@
+Arguments: 
+  /usr/local/bin/node /opt/yarn-v1.22.19/bin/yarn.js install
+
+PATH: 
+  /opt/git/bin:/vscode/1.89.1.24130/bin/remote-cli:/opt/git/bin:/opt/git/bin:/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.local/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.12.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /project/workspace/package.json: Expected ',' or '}' after property value in JSON at position 778
+      at JSON.parse (<anonymous>)
+      at /opt/yarn-v1.22.19/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/opt/yarn-v1.22.19/lib/cli.js:310:30)
+      at /opt/yarn-v1.22.19/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "react-typescript",
+    "version": "1.0.0",
+    "description": "React and TypeScript example starter project",
+    "keywords": [
+      "typescript",
+      "react",
+      "starter"
+    ],
+    "main": "src/index.tsx",
+    "dependencies": {
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "bootstrap": "5.3.3",
+      "react-router-dom": "7.4.1",
+      "@types/react-router-dom": "5.3.3",
+      "react-bootstrap": "2.10.9",
+      "@supabase/supabase-js": "2.49.4"
+    },
+    "devDependencies": {
+      "@types/react": "18.2.38",
+      "@types/react-dom": "18.2.15",
+      "typescript": "4.4.4",
+      "vite": "^5.0.11",
+      "@vitejs/plugin-react": "^4.2.1"
+    },
+    "scripts": {
+      "start": "vite",            
+      "dev": "vite",
+      "build": "tsc && vite build",
+      "preview": "vite preview"
+    }
+    
+    "browserslist": [
+      ">0.2%",
+      "not dead",
+      "not ie <= 11",
+      "not op_mini all"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

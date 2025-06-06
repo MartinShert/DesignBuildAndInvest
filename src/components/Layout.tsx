@@ -2,28 +2,27 @@ import React from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "./Header";
 import ImageCarousel from "./ImageCarousel";
-import "../styles.css";
+import "../assets/css/styles.css";
 
 const Layout: React.FC = () => {
   const location = useLocation();
 
   return (
-    <div>
+    <div
+      className="page-wrapper"
+      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+    >
       <Header />
 
-      <main>
-        {/* Main page content */}
+      <main style={{ flex: "1 0 auto" }}>
         <Outlet />
-
-        {/* Carousel only on home page */}
-        {location.pathname === "/" && (
-          <div className="carousel-container">
-            <ImageCarousel />
-          </div>
-        )}
       </main>
 
-      {/* You can add Footer here if you want */}
+      {location.pathname === "/" && (
+        <footer className="carousel-footer" style={{ flexShrink: 0 }}>
+          <ImageCarousel />
+        </footer>
+      )}
     </div>
   );
 };
