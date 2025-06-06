@@ -6,10 +6,17 @@ const SecondPage: React.FC = () => {
       <h1>About Us</h1>
 
       <p>
-        We are a Home Repair Expert Contractor and take pride in offering the
-        customers the best in options and pricing. We believe in giving the
-        customer options and recommendations to let them have control over their
-        repair project down to materials used to scope of work.
+        With years of dedicated experience, we pride ourselves on delivering
+        top-quality services tailored to your needs. Our team combines
+        expertise, innovation, and a passion for excellence to ensure every
+        project is handled with the utmost care and precision. At the heart of
+        our business is a commitment to customer satisfaction. We believe in
+        transparent communication, reliable workmanship, and building lasting
+        relationships with our clients. Whether it’s a small repair or a major
+        renovation, we approach each job with the same level of dedication and
+        attention to detail. Thank you for considering us as your trusted
+        partner. We look forward to helping you bring your vision to life with
+        professionalism and creativity.
       </p>
 
       <h2>In business for you...</h2>

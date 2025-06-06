@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "./Header";
 import ImageCarousel from "./ImageCarousel";
-import "../assets/css/styles.css";
+import "../assets/css/global.css";
 
 const Layout: React.FC = () => {
   const location = useLocation();
@@ -17,6 +17,9 @@ const Layout: React.FC = () => {
       <main style={{ flex: "1 0 auto" }}>
         <Outlet />
       </main>
+
+      {/* Call Now button on every page, above the carousel */}
+      <button className="call-now-button">Call Now!</button>
 
       {location.pathname === "/" && (
         <footer className="carousel-footer" style={{ flexShrink: 0 }}>

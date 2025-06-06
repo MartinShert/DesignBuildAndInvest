@@ -8,16 +8,30 @@ const Header: React.FC = () => {
       <div className="logo-wrapper">
         <div className="gradient-bar left"></div>
 
-        <img src="https://i.imgur.com/yQrPr6C.png" alt="Logo" />
+        <img
+          src="https://i.imgur.com/yQrPr6C.png"
+          alt="Logo"
+          className="company-logo"
+        />
 
         <div className="gradient-bar right"></div>
       </div>
 
       <nav className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/about">About Us</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/referral">Referrals</Link> {/* ✅ Points to /referral */}
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About Us</Link>
+          </li>
+          <li>
+            <Link to="/services">Services</Link>
+          </li>
+          <li>
+            <Link to="/referral">Referrals</Link>
+          </li>
+        </ul>
       </nav>
     </header>
   );

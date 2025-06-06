@@ -24,7 +24,7 @@ const ReferralForm: React.FC = () => {
     ]);
 
     if (error) {
-      console.error("🔥 Supabase REAL error:", error); // NEW better error log
+      console.error("🔥 Supabase REAL error:", error);
       setStatus("Failed to save to database.");
       return;
     }
@@ -54,24 +54,85 @@ const ReferralForm: React.FC = () => {
   };
 
   return (
-    <div className="referral-form-page">
+    <div
+      className="referral-form-page"
+      style={{ textAlign: "center", paddingTop: "2rem", paddingInline: "1rem" }}
+    >
       <h2>Referrals</h2>
-      <form onSubmit={handleSubmit}>
+
+      <p
+        style={{
+          maxWidth: "600px",
+          margin: "0 auto 1.5rem",
+          fontSize: "1rem",
+          lineHeight: "1.5",
+        }}
+      >
+        Love our service? Spread the word and earn rewards! When you refer a
+        friend, both you <strong>and</strong> your referral will receive
+        <strong> 10% off</strong> your entire project. It’s our way of saying
+        thanks for helping the community find a service they can trust. Just
+        enter your info below and we’ll send you a personalized referral code to
+        share!
+      </p>
+
+      <form
+        onSubmit={handleSubmit}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "1rem",
+        }}
+      >
         <input
           type="text"
           placeholder="Your Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          required
+          style={{
+            padding: "0.75rem",
+            borderRadius: "4px",
+            border: "1px solid #ccc",
+            width: "80%",
+            maxWidth: "300px",
+            textAlign: "center",
+          }}
         />
         <input
           type="email"
           placeholder="Your Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
+          style={{
+            padding: "0.75rem",
+            borderRadius: "4px",
+            border: "1px solid #ccc",
+            width: "80%",
+            maxWidth: "300px",
+            textAlign: "center",
+          }}
         />
-        <button type="submit">Generate Referral</button>
+        <button
+          type="submit"
+          style={{
+            backgroundColor: "#0a6c66",
+            color: "#fff",
+            padding: "0.6rem 1.2rem",
+            border: "none",
+            borderRadius: "4px",
+            cursor: "pointer",
+            fontWeight: "bold",
+            width: "fit-content",
+          }}
+        >
+          Generate Referral
+        </button>
       </form>
-      {status && <p>{status}</p>}
+
+      {status && <p style={{ marginTop: "1rem" }}>{status}</p>}
     </div>
   );
 };

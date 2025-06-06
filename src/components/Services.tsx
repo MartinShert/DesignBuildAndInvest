@@ -1,17 +1,14 @@
 import React from "react";
 import "../assets/css/styles.css";
 
-
 const ThirdPage: React.FC = () => {
   return (
-    <div>
-      <body className="Offerings">
-        <h1>Services</h1>
-      </body>
+    <div className="Offerings">
+      <h1>Services</h1>
 
-      <p>Browse our expert services.</p>
+      <p style={{ textAlign: "center" }}>Browse our expert services.</p>
 
-      <ul style={{ listStyleType: "disc", marginLeft: "20px" }}>
+      <ul>
         <li>
           <button
             onClick={() =>
@@ -21,7 +18,6 @@ const ThirdPage: React.FC = () => {
             Roofing
           </button>
         </li>
-
         <li>
           <button
             onClick={() =>
@@ -31,7 +27,6 @@ const ThirdPage: React.FC = () => {
             Siding and Trim
           </button>
         </li>
-
         <li>
           <button
             onClick={() =>
@@ -41,7 +36,6 @@ const ThirdPage: React.FC = () => {
             Doors and Windows
           </button>
         </li>
-
         <li>
           <button
             onClick={() =>
@@ -51,7 +45,6 @@ const ThirdPage: React.FC = () => {
             Walls and Ceilings
           </button>
         </li>
-
         <li>
           <button
             onClick={() =>
@@ -61,7 +54,6 @@ const ThirdPage: React.FC = () => {
             Kitchen and Bathroom
           </button>
         </li>
-
         <li>
           <button
             onClick={() =>

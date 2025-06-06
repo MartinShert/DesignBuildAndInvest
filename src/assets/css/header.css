@@ -1,32 +1,101 @@
 /* header.css */
+
+/* Header container */
 header {
   background-color: #333;
   color: white;
-  padding: 10px;
-}
-
-header nav ul {
+  padding: 10px 20px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo wrapper with gradient bars */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
   justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 15px;
 }
 
-header nav ul li {
-  margin: 0 10px;
+.gradient-bar {
+  flex: 1;
+  height: 4px;
+  background: linear-gradient(90deg, #20c997, transparent);
 }
 
-header nav ul li a {
-  color: white;
-  text-decoration: none;
+.gradient-bar.left {
+  margin-right: 10px;
 }
 
-header nav ul li a:hover {
-  text-decoration: underline;
+.gradient-bar.right {
+  margin-left: 10px;
+  background: linear-gradient(270deg, #20c997, transparent);
 }
 
+/* Logo image */
 .company-logo {
   width: 150px;
   height: auto;
   display: block;
-  margin: 0 auto;
-  padding: 10px 0;
+  padding: 0 10px;
+}
+
+/* Navigation container */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* space between links */
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Navigation links */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 8px 18px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover and focus effect */
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: #20c997; /* turquoise green */
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0 8px rgba(32, 201, 151, 0.7);
+  outline: none;
+  cursor: pointer;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  .logo-wrapper {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .company-logo {
+    width: 120px;
+    padding: 0 5px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
 }

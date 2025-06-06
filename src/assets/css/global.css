@@ -78,19 +78,19 @@ main {
 
 /* Call Now Button */
 .call-now-button {
-  margin: 20px auto;
-  display: block;
-  padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #007a63; /* darker green with bluish turquoise tones */
   color: white;
   border: none;
   border-radius: 5px;
+  padding: 10px 20px;
   cursor: pointer;
+  margin: 20px auto;
+  display: block;
   z-index: 10;
 }
 
 .call-now-button:hover {
-  background-color: #0056b3;
+  background-color: #00594b; /* slightly darker on hover */
 }
 
 .company-logo {
@@ -191,4 +191,65 @@ footer p {
 .referral-form-page button {
   margin-top: 20px;
   padding: 10px 20px;
+}
+
+.call-button {
+  display: none !important;
+}
+
+.Offerings ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+header nav ul li a {
+  color: #55595c; /* off-set grey */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #2a9df4; /* a nice blue highlight on hover */
+  transform: scale(1.1);
+  text-decoration: none; /* cleaner, no underline */
+}
+
+.about-us-page {
+  max-width: 800px;
+  margin: 0 auto; /* Horizontally center the container */
+  padding: 40px 20px;
+  text-align: center; /* Center text inside the container */
+}
+
+.about-us-page ul.small-list {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  text-align: left; /* Keep bullet points left-aligned */
+  margin: 1em auto;
+  display: inline-block; /* Makes the list fit its content width */
+}
+
+.home-intro {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.home-intro h1 {
+  font-size: 1.5rem;
+  color: #2b6777;
+  margin-bottom: 20px;
+}
+
+.home-intro p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 15px;
 }
